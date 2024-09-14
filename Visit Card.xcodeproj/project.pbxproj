@@ -11,6 +11,10 @@
 		BEE3F0572C8618C000389533 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3F0562C8618C000389533 /* ContentView.swift */; };
 		BEE3F0592C8618C100389533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE3F0582C8618C100389533 /* Assets.xcassets */; };
 		BEE3F05C2C8618C100389533 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE3F05B2C8618C100389533 /* Preview Assets.xcassets */; };
+		BEE3F0642C861FB700389533 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3F0632C861FB700389533 /* UserCard.swift */; };
+		BEE3F0692C8622AB00389533 /* UserCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3F0682C8622AB00389533 /* UserCardData.swift */; };
+		BEE3F06B2C86235A00389533 /* UserCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3F06A2C86235A00389533 /* UserCardView.swift */; };
+		BEE3F0702C88968400389533 /* ButtonShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3F06F2C88968400389533 /* ButtonShareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		BEE3F0562C8618C000389533 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BEE3F0582C8618C100389533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEE3F05B2C8618C100389533 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEE3F0632C861FB700389533 /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCard.swift; sourceTree = "<group>"; };
+		BEE3F0682C8622AB00389533 /* UserCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardData.swift; sourceTree = "<group>"; };
+		BEE3F06A2C86235A00389533 /* UserCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardView.swift; sourceTree = "<group>"; };
+		BEE3F06F2C88968400389533 /* ButtonShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,13 @@
 		BEE3F0532C8618C000389533 /* Visit Card */ = {
 			isa = PBXGroup;
 			children = (
+				BEE3F06C2C877C1200389533 /* ViewModel */,
+				BEE3F0672C86228600389533 /* Data */,
+				BEE3F0622C861F8F00389533 /* Model */,
 				BEE3F0542C8618C000389533 /* Visit_CardApp.swift */,
 				BEE3F0562C8618C000389533 /* ContentView.swift */,
+				BEE3F06A2C86235A00389533 /* UserCardView.swift */,
+				BEE3F06F2C88968400389533 /* ButtonShareView.swift */,
 				BEE3F0582C8618C100389533 /* Assets.xcassets */,
 				BEE3F05A2C8618C100389533 /* Preview Content */,
 			);
@@ -65,6 +78,29 @@
 				BEE3F05B2C8618C100389533 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEE3F0622C861F8F00389533 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3F0632C861FB700389533 /* UserCard.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BEE3F0672C86228600389533 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3F0682C8622AB00389533 /* UserCardData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BEE3F06C2C877C1200389533 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE3F0692C8622AB00389533 /* UserCardData.swift in Sources */,
 				BEE3F0572C8618C000389533 /* ContentView.swift in Sources */,
+				BEE3F0642C861FB700389533 /* UserCard.swift in Sources */,
 				BEE3F0552C8618C000389533 /* Visit_CardApp.swift in Sources */,
+				BEE3F0702C88968400389533 /* ButtonShareView.swift in Sources */,
+				BEE3F06B2C86235A00389533 /* UserCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
