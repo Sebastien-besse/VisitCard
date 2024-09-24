@@ -9,8 +9,6 @@ import SwiftUI
 
 struct UserCardView: View {
     var body: some View {
-        
-        
             VStack(alignment: .center){
                 Ellipse()
                     .fill(Color.purple.opacity(0.5))
@@ -108,7 +106,6 @@ struct UserCardView: View {
                 .padding()
             }
             .padding(.horizontal)
-       
     }
     
 }
@@ -116,20 +113,6 @@ struct UserCardView: View {
     UserCardView()
 }
 
-struct LinkView: View {
-    let link: String
-    let symbole: String
-    var body: some View {
-        HStack{
-            Image(systemName: symbole)
-                    .font(.largeTitle)
-                    .symbolRenderingMode(.hierarchical)
-                    .foregroundStyle(.purple, .purple)
-                    .opacity(0.5)
-            
-            Text(link)
-        }
-    }
-}
+
 
 

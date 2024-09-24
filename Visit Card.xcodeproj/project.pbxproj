@@ -15,6 +15,7 @@
 		BEE3F0692C8622AB00389533 /* UserCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3F0682C8622AB00389533 /* UserCardData.swift */; };
 		BEE3F06B2C86235A00389533 /* UserCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3F06A2C86235A00389533 /* UserCardView.swift */; };
 		BEE3F0702C88968400389533 /* ButtonShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3F06F2C88968400389533 /* ButtonShareView.swift */; };
+		BEE3F1962CA3459A00389533 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3F1952CA3459A00389533 /* LinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BEE3F0682C8622AB00389533 /* UserCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardData.swift; sourceTree = "<group>"; };
 		BEE3F06A2C86235A00389533 /* UserCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardView.swift; sourceTree = "<group>"; };
 		BEE3F06F2C88968400389533 /* ButtonShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShareView.swift; sourceTree = "<group>"; };
+		BEE3F1952CA3459A00389533 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +61,12 @@
 		BEE3F0532C8618C000389533 /* Visit Card */ = {
 			isa = PBXGroup;
 			children = (
-				BEE3F06C2C877C1200389533 /* ViewModel */,
+				BEE3F06C2C877C1200389533 /* View */,
 				BEE3F0672C86228600389533 /* Data */,
 				BEE3F0622C861F8F00389533 /* Model */,
 				BEE3F0542C8618C000389533 /* Visit_CardApp.swift */,
 				BEE3F0562C8618C000389533 /* ContentView.swift */,
 				BEE3F06A2C86235A00389533 /* UserCardView.swift */,
-				BEE3F06F2C88968400389533 /* ButtonShareView.swift */,
 				BEE3F0582C8618C100389533 /* Assets.xcassets */,
 				BEE3F05A2C8618C100389533 /* Preview Content */,
 			);
@@ -96,11 +97,21 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		BEE3F06C2C877C1200389533 /* ViewModel */ = {
+		BEE3F06C2C877C1200389533 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BEE3F1942CA3456E00389533 /* Components */,
 			);
-			path = ViewModel;
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEE3F1942CA3456E00389533 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3F06F2C88968400389533 /* ButtonShareView.swift */,
+				BEE3F1952CA3459A00389533 /* LinkView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 				BEE3F0642C861FB700389533 /* UserCard.swift in Sources */,
 				BEE3F0552C8618C000389533 /* Visit_CardApp.swift in Sources */,
 				BEE3F0702C88968400389533 /* ButtonShareView.swift in Sources */,
+				BEE3F1962CA3459A00389533 /* LinkView.swift in Sources */,
 				BEE3F06B2C86235A00389533 /* UserCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
