@@ -28,10 +28,7 @@ struct UserCardView: View {
                             .listRowSeparator(.hidden)
                     }
                     .listRowSeparator(.hidden)
-                
-                // Centrer le nom et le positionner plus haut
-              
-                
+   
                 HStack{
                     Text(userCard.profession)
                         .foregroundStyle(.secondary)
@@ -45,11 +42,7 @@ struct UserCardView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                 }
                 .padding(.vertical)
-                
-
-
-                    
-                  
+  
                 VStack(alignment: .leading){
                     
                     Rectangle()
@@ -107,12 +100,7 @@ struct UserCardView: View {
             }
             .padding(.horizontal)
     }
-    
 }
 #Preview {
     UserCardView()
 }
-
-
-
-
