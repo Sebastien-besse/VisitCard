@@ -72,7 +72,6 @@
 				BEE3F0622C861F8F00389533 /* Model */,
 				BEE3F0542C8618C000389533 /* Visit_CardApp.swift */,
 				BEE3F0562C8618C000389533 /* ContentView.swift */,
-				BEE3F06A2C86235A00389533 /* UserCardView.swift */,
 				BEE3F0582C8618C100389533 /* Assets.xcassets */,
 				BEE3F05A2C8618C100389533 /* Preview Content */,
 			);
@@ -108,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				BEE3F1942CA3456E00389533 /* Components */,
+				BEE3F06A2C86235A00389533 /* UserCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

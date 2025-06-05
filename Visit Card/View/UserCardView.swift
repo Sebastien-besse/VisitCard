@@ -67,6 +67,7 @@ struct UserCardView: View {
             .font(.headline)
             .foregroundStyle(isDark ? .orange.opacity(0.8) : .white)
             .bold()
+            
             .padding(10)
             .background(isDark ? Color.orange.opacity(0.2) : .twitch)
             .clipShape(RoundedRectangle(cornerRadius: 40))
