@@ -13,13 +13,14 @@ var userCard = UserCard(
     image: "Profil",
     profession: "Développeur iOS",
     competence: competences,
-    description: "Je suis tout simplement le boss Zebi!",
+    description: "De SEGPA à Ingénieur iOS Zebiii! 💻",
     statut: "Open to work",
     email: "sebastien_besse@yahoo.com",
     site: "www.monsite.fr",
     gitHub: "https://github.com/Sebastien-besse"
 )
-
+let imageSegpa = "Profil-Segpa"
+let work = "Winter Arc"
 var competences = [
     
     Competence(skill: "SwiftUI", level: [.starFilled, .starFilled, .starFilled, .starFilled, .starLeading]),

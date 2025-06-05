@@ -9,7 +9,6 @@ import SwiftUI
 
 struct UserCardView: View {
     @State var isDark: Bool = true
-    let description = "Actuellement en formation en développement iOS 💻"
     var body: some View {
         VStack(alignment: .center){
             Ellipse()
@@ -20,12 +19,13 @@ struct UserCardView: View {
                 .overlay {
                     ButtonDarkModeView(isDark: $isDark)
                         .offset(x: 150 ,y: -90)
-                    Image(userCard.image)
+                    Image(isDark ? imageSegpa : userCard.image)
                         .resizable()
                         .scaledToFill()
                         .frame(width: 150)
                         .clipShape(Circle())
                         .offset(y: -20)
+                        .rotation3DEffect(.degrees(isDark ? 360 : 0), axis: (x: 0, y: 1, z: 0))
                     Text("\(userCard.lastName) \(userCard.firstName)")
                         .font(.title)
                         .foregroundStyle(isDark ? .black : .white)
@@ -39,7 +39,7 @@ struct UserCardView: View {
             
             VStack(alignment: .leading){
                     
-                descriptionView(description: isDark ? description : userCard.description )
+                descriptionView(description: userCard.description )
 
                 VStack(alignment: .leading, spacing: 10){
                     LinkView(isDark: $isDark, link: userCard.email, symbole: "envelope.circle.fill")
@@ -81,11 +81,13 @@ struct UserCardView: View {
                     .fill(isDark ? Color.white.opacity(0.9) : .twitch)
                     .frame(width: 348, height: 79)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
+                    
                 Text(description)
-                    .font(.system(size: 22))
+                    .font(.system(size: 20))
                     .foregroundStyle(isDark ? .black : .white)
                     
             }
+           
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .padding()
     }
@@ -96,12 +98,13 @@ struct UserCardView: View {
                 .foregroundStyle(isDark ? .gray.opacity(0.8) : .white)
                 .bold()
             Spacer()
-            Text(status)
+            Text(isDark ? status : work )
                 .font(.headline)
                 .foregroundStyle(.white)
                 .padding(8)
                 .background(.twitch)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
+                .rotation3DEffect(.degrees(isDark ? 360 : 0), axis: (x: 1, y: 0, z: 0))
         }
         .padding()
     }
