@@ -67,7 +67,6 @@ struct UserCardView: View {
             .font(.headline)
             .foregroundStyle(isDark ? .orange.opacity(0.8) : .white)
             .bold()
-            
             .padding(10)
             .background(isDark ? Color.orange.opacity(0.2) : .twitch)
             .clipShape(RoundedRectangle(cornerRadius: 40))
@@ -83,14 +82,13 @@ struct UserCardView: View {
                     .frame(width: 348, height: 79)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 Text(description)
-                    .font(.system(size: 25))
+                    .font(.system(size: 22))
                     .foregroundStyle(isDark ? .black : .white)
                     
             }
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .padding()
     }
-    
     
     func activity(profession: String, status: String) -> some View{
         HStack{
@@ -107,7 +105,6 @@ struct UserCardView: View {
         }
         .padding()
     }
-    
 }
 #Preview {
     UserCardView()
